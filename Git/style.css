@@ -1,0 +1,664 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+}
+.hero {
+  width: 100%;
+  height: 100%;
+}
+nav {
+  z-index: 1;
+  top: 0;
+  position: sticky;
+  color: #fff;
+  width: 100%;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.226);
+  backdrop-filter: blur(10px);
+  display: flex;
+}
+nav .git {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px 10px 75px;
+  cursor: pointer;
+}
+nav .git h1 {
+  font-size: 26px;
+  font-weight: 500;
+}
+nav .git h1 i {
+  font-size: 33px;
+}
+nav .list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav .list ul li {
+  padding: 5px 0px 0px 53px;
+  display: inline-block;
+  align-items: center;
+  list-style: none;
+}
+nav .list ul li a {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+}
+nav .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 80px;
+}
+nav .buttons .blackbtn {
+  width: 220px;
+  color: #fff;
+  font-size: 18px;
+  padding: 8px;
+  outline: none;
+  cursor: pointer;
+  background: #000;
+  border: 3px solid grey;
+  border-radius: 5px;
+}
+nav .buttons .blackbtn i {
+  color: #fff;
+  padding: 5px 0px 0px 10px;
+}
+
+nav .buttons .blackbtn:hover {
+  border: 3px solid #fff;
+}
+nav .buttons .whitebtn {
+  margin-left: 20px;
+  width: 160px;
+  color: #201f1f;
+  font-size: 18px;
+  padding: 10px;
+  outline: none;
+  cursor: pointer;
+  background: #fff;
+  border: none;
+  border-radius: 5px;
+}
+nav .buttons .whitebtn i {
+  color: #201f1f;
+  padding: 5px 0px 0px 10px;
+}
+
+.main {
+  display: flex;
+  width: 1220px;
+  overflow: hidden;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 0px 0px 65px;
+}
+.main img {
+  width: 100%;
+  border-radius: 50px;
+  display: block;
+  transition: transform 2s;
+}
+.main:hover img {
+  transform: scale(1.1);
+}
+.content {
+  padding-top: 50px;
+  width: 100%;
+}
+.content span {
+  padding-left: 90px;
+  font-size: 25px;
+  width: 100%;
+}
+.universe {
+  padding: 50px;
+}
+.globle {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 65px;
+}
+.globle .future {
+  width: 50%;
+  font-size: 35px;
+  color: gray;
+}
+.globle .gradient {
+  width: 256px;
+  height: 56px;
+  padding: 3px;
+  border-radius: 5px;
+  background: linear-gradient(
+    45deg,
+    rgb(80, 80, 255),
+    rgb(81, 255, 0),
+    rgb(80, 80, 255)
+  );
+}
+.globle .gradient:hover {
+  background: #fff;
+}
+.globle .btn {
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 250px;
+  height: 50px;
+  font-size: 25px;
+  font-weight: 600;
+  background: #000;
+  color: rgb(153, 125, 125);
+}
+.globle .btn i {
+  color: rgb(153, 125, 125);
+}
+.binto {
+  width: 100%;
+  height: 100%;
+}
+.binto img {
+  padding: 65px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.describe {
+  width: 100%;
+  padding: 10px 65px 0 65px;
+  font-weight: 500;
+}
+.describe h1 {
+  font-weight: 600;
+  font-size: 43px;
+  color: gray;
+}
+.describe h1 img {
+  width: 45px;
+}
+.number {
+  padding: 65px;
+  width: 100%;
+  display: flex;
+}
+.number .num {
+  width: 400px;
+  padding: 10px;
+  font-size: 35px;
+}
+.number .num p {
+  color: gray;
+}
+
+.price {
+  width: 1200px;
+}
+.price .maincon {
+  margin: 0px 70px;
+  width: 100%;
+  box-shadow: 2px 0px 500px rgb(47, 32, 112);
+  border-radius: 20px;
+  background: #120e1a;
+  display: flex;
+}
+.price .maincon .left {
+  width: 50%;
+}
+
+.price .maincon .left .top {
+  width: 60%;
+  padding: 65px;
+}
+.price .maincon .left .top h1 {
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.price .maincon .left .bottom {
+  margin-top: 44%;
+  width: 60%;
+  padding: 65px;
+}
+.price .maincon .left .bottom h1 {
+  font-size: 25px;
+  font-weight: 500;
+  color: grey;
+}
+.price .maincon .left .bottom button {
+  width: 150px;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  background: #120e1a;
+  border: none;
+  outline: none;
+  border: 1px solid #fff;
+  border-radius: 50px;
+}
+.price .maincon .line {
+  width: 50%;
+}
+.price .maincon .right {
+  padding-top: 65px;
+  width: 100%;
+  display: flex;
+}
+.price .maincon .right .pricecon {
+  width: 50%;
+}
+.price .maincon .right .pricecon h1 {
+  font-size: 27px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+.price .maincon .right .pricebtn {
+  padding: 15px 0px 0px 60px;
+  width: 50%;
+}
+.price .maincon .right .pricebtn button {
+  margin-top: 15px;
+  padding: 12px;
+  width: 180px;
+  font-size: 18px;
+  background: #120e1a;
+  border: none;
+  outline: none;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+.price .maincon .right .pricebtn button:hover {
+  border: 1px solid rgb(255, 255, 255);
+}
+.price .maincon .right .pricebtn pre {
+  font-size: 20px;
+  color: #fff;
+}
+.price .maincon .right .pricebtn pre del {
+  color: grey;
+}
+
+.line .trend {
+  width: 90%;
+  margin-top: 25px;
+  height: 1px;
+  background-color: rgb(75, 69, 69);
+}
+
+.question {
+  margin-top: 30px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.question h3 {
+  font-weight: 500;
+}
+.question button {
+  margin-left: 20px;
+  width: 120px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.question button:hover {
+  border: 2px solid #fff;
+}
+.track {
+  padding: 75px;
+  width: 50%;
+}
+
+.track h1 {
+  font-size: 50px;
+  font-weight: 500;
+}
+.track p {
+  padding-top: 20px;
+  font-size: 26px;
+  font-weight: 500;
+  color: grey;
+}
+.ai {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.ai .left {
+  width: 12%;
+  padding: 65px 0px 0px 75px;
+}
+.ai .left .ailogo {
+  width: 62px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(45deg, rgb(0, 0, 255), rgb(255, 255, 255));
+}
+
+.ai .left .ailogo .ailogosvg {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #000;
+}
+.ai .left .ailogo .ailogosvg img {
+  width: 25px;
+}
+
+.ai .right {
+  width: 88%;
+  padding: 55px 65px 0px 0px;
+}
+.ai .right .aicontent {
+  display: flex;
+}
+.ai .right .aicontent .leftcontent {
+  width: 50%;
+  padding-right: 200px;
+}
+.ai .right .aicontent .leftcontent h1 {
+  font-size: 65px;
+}
+.ai .right .aicontent .leftcontent p {
+  font-size: 38px;
+  font-weight: 500;
+  color: grey;
+}
+.ai .right .aicontent .rightcontent {
+  padding-top: 20px;
+  width: 50%;
+}
+
+.ai .right .aicontent .rightcontent p {
+  color: grey;
+  padding-bottom: 20px;
+}
+.ai .right .aicontent .rightcontent h1 {
+  font-size: 28px;
+  padding-top: 8px;
+  font-weight: 500;
+}
+.ai .right .dashedline {
+  margin-top: 75px;
+  width: 100%;
+  border-bottom: 2px dashed rgb(44, 39, 39);
+}
+.devider {
+  width: 100%;
+  margin-top: 50px;
+  padding: 75px;
+}
+.speaker {
+  width: 100%;
+  display: flex;
+  padding: 65px;
+  justify-content: space-between;
+}
+.speaker .left {
+  font-size: 28px;
+}
+.speaker .left h1 {
+  font-weight: 600;
+}
+.speaker button {
+  font-size: 18px;
+  width: 260px;
+  height: 50px;
+  border-radius: 5px;
+  background: transparent;
+  border: 2px solid rgb(77, 72, 72);
+}
+.speaker button:hover {
+  border: 2px solid #fff;
+}
+.maindiv {
+  width: 100%;
+  height: 100vh;
+  padding: 65px;
+}
+
+.maindiv .carddiv {
+  width: 100%;
+  display: flex;
+}
+
+.card {
+  width: 280px;
+  height: 300px;
+  position: relative;
+  opacity: 0.7;
+  background: url(images/70720.jpeg) center;
+  background-size: cover;
+  border-radius: 10px;
+  transition: 2s;
+}
+.card:hover {
+  transform: scale(0.9);
+}
+.card .cardoverlay {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+.card:hover .cardoverlay {
+  opacity: 1;
+  border: 6px solid rgb(212, 0, 255);
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 0, 0, 0.418),
+    rgba(0, 0, 255, 0.473),
+    rgba(255, 0, 0, 0.397)
+  );
+}
+
+.cardcontainer2 {
+  padding: 200px 65px;
+}
+.cardcontainer3 {
+  padding: 0px 0px;
+}
+.cardcontainer4 {
+  padding: 200px 65px;
+}
+.card {
+  width: 250px;
+  height: 270px;
+  position: relative;
+  opacity: 0.7;
+  background: url(images/70720.jpeg) center;
+  background-size: cover;
+  border-radius: 10px;
+  transition: 2s;
+}
+.card:hover {
+  transform: scale(0.9);
+}
+.card .cardoverlay {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+.card:hover .cardoverlay {
+  opacity: 1;
+  border: 6px solid rgb(212, 0, 255);
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 0, 0, 0.418),
+    rgba(0, 0, 255, 0.473),
+    rgba(255, 0, 0, 0.397)
+  );
+}
+
+.card2 {
+  width: 250px;
+  height: 270px;
+  position: relative;
+  opacity: 0.7;
+  background: url(images/9168902.jpeg) center;
+  background-size: cover;
+  border-radius: 10px;
+  transition: 2s;
+}
+.card2:hover {
+  transform: scale(0.9);
+}
+.card2 .cardoverlay {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+.card2:hover .cardoverlay {
+  opacity: 1;
+  border: 6px solid rgb(212, 0, 255);
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 0, 0, 0.418),
+    rgba(0, 0, 255, 0.473),
+    rgba(255, 0, 0, 0.397)
+  );
+}
+.card3 {
+  width: 250px;
+  height: 270px;
+  position: relative;
+  opacity: 0.7;
+  background: url(images/24463725.jpeg) center;
+  background-size: cover;
+  border-radius: 10px;
+  transition: 2s;
+}
+.card3:hover {
+  transform: scale(0.9);
+}
+.card3 .cardoverlay {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+.card3:hover .cardoverlay {
+  opacity: 1;
+  border: 6px solid rgb(212, 0, 255);
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 0, 0, 0.418),
+    rgba(0, 0, 255, 0.473),
+    rgba(255, 0, 0, 0.397)
+  );
+}
+
+.card4 {
+  width: 250px;
+  height: 270px;
+  position: relative;
+  opacity: 0.7;
+  background: url(images/167443.jpeg) center;
+  background-size: cover;
+  border-radius: 10px;
+  transition: 2s;
+}
+.card4:hover {
+  transform: scale(0.9);
+}
+.card4 .cardoverlay {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+.card4:hover .cardoverlay {
+  opacity: 1;
+  border: 6px solid rgb(212, 0, 255);
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 0, 0, 0.418),
+    rgba(0, 0, 255, 0.473),
+    rgba(255, 0, 0, 0.397)
+  );
+}
+
+
+footer .top {
+  background-color: #120e1a;
+  padding: 65px;
+  display: flex;
+  border-top: 1px solid grey;
+  border-bottom:1px solid grey;
+  justify-content: space-between;
+}
+footer .top h1 {
+  width: 20%;
+}
+footer .top .icon {
+  font-size: 25px;
+  
+}
+footer .top .icon i {
+  padding: 5px;
+  cursor: pointer;
+}
+footer .bottom{
+  background-color: #120e1a;
+  padding: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .bottom p, pre{
+ font-size: 19px;
+ font-weight: 500;
+ color: grey;
+}
+
